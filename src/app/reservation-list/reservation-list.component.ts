@@ -27,6 +27,7 @@ export class ReservationListComponent {
     'name',
     'email',
     'phone',
+    'actions'
   ];
 
 }
