@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Reservation } from '../_models/reservation.model';
 
 @Component({
   selector: 'app-reservation-list',
@@ -6,18 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./reservation-list.component.css']
 })
 export class ReservationListComponent {
-  reservations = [
-    { name:'Paola Villarreal', email:'paola.villareal@u-erre.mx', phone: '8617984872', people: 2, reservationDate: '2023-04-30T06:00:00.00Z', reservationShedule: 7 },
-    { name:'Paola Villarreal', email:'paola.villareal@u-erre.mx', phone: '8617984872', people: 2, reservationDate: '2023-04-30T06:00:00.00Z', reservationShedule: 7 },
-    { name:'Paola Villarreal', email:'paola.villareal@u-erre.mx', phone: '8617984872', people: 2, reservationDate: '2023-04-30T06:00:00.000Z', reservationShedule: 7 },
-    { name:'Paola Villarreal', email:'paola.villareal@u-erre.mx', phone: '8617984872', people: 2, reservationDate: '2023-04-30T06:00:00.000Z', reservationShedule: 7 },
-    { name:'Paola Villarreal', email:'paola.villareal@u-erre.mx', phone: '8617984872', people: 2, reservationDate: '2023-04-30T06:00:00.000Z', reservationShedule: 7 },
-    { name:'Paola Villarreal', email:'paola.villareal@u-erre.mx', phone: '8617984872', people: 2, reservationDate: '2023-04-30T06:00:00.000Z', reservationShedule: 7 },
-    { name:'Paola Villarreal', email:'paola.villareal@u-erre.mx', phone: '8617984872', people: 2, reservationDate: '2023-04-30T06:00:00.000Z', reservationShedule: 7 },
-    { name:'Paola Villarreal', email:'paola.villareal@u-erre.mx', phone: '8617984872', people: 2, reservationDate: '2023-04-30T06:00:00.000Z', reservationShedule: 7 },
-    { name:'Paola Villarreal', email:'paola.villareal@u-erre.mx', phone: '8617984872', people: 2, reservationDate: '2023-04-30T06:00:00.000Z', reservationShedule: 7 },
-    { name:'Paola Villarreal', email:'paola.villareal@u-erre.mx', phone: '8617984872', people: 2, reservationDate: '2023-04-30T06:00:00.000Z', reservationShedule: 7 },
-    { name:'Paola Villarreal', email:'paola.villareal@u-erre.mx', phone: '8617984872', people: 2, reservationDate: '2023-04-30T06:00:00.000Z', reservationShedule: 7 },
+  reservations: Reservation [] = [
+    { name:'Paola Villarreal', email:'paola.villareal@u-erre.mx', phone: '8617984872', people: 2, reservationDate: new Date ('2023-04-30T06:00:00.00Z',), reservationShedule: 7 },
+    { name:'Paola Villarreal', email:'paola.villareal@u-erre.mx', phone: '8617984872', people: 2, reservationDate: new Date ('2023-04-30T06:00:00.00Z',), reservationShedule: 7 },
+    { name:'Paola Villarreal', email:'paola.villareal@u-erre.mx', phone: '8617984872', people: 2, reservationDate: new Date ('2023-04-30T06:00:00.000Z'), reservationShedule: 7 },
+    { name:'Paola Villarreal', email:'paola.villareal@u-erre.mx', phone: '8617984872', people: 2, reservationDate: new Date ('2023-04-30T06:00:00.000Z'), reservationShedule: 7 },
+    { name:'Paola Villarreal', email:'paola.villareal@u-erre.mx', phone: '8617984872', people: 2, reservationDate: new Date ('2023-04-30T06:00:00.000Z'), reservationShedule: 7 },
+    { name:'Paola Villarreal', email:'paola.villareal@u-erre.mx', phone: '8617984872', people: 2, reservationDate: new Date ('2023-04-30T06:00:00.000Z'), reservationShedule: 7 },
+    { name:'Paola Villarreal', email:'paola.villareal@u-erre.mx', phone: '8617984872', people: 2, reservationDate: new Date ('2023-04-30T06:00:00.000Z'), reservationShedule: 7 },
+    { name:'Paola Villarreal', email:'paola.villareal@u-erre.mx', phone: '8617984872', people: 2, reservationDate: new Date ('2023-04-30T06:00:00.000Z'), reservationShedule: 7 },
+    { name:'Paola Villarreal', email:'paola.villareal@u-erre.mx', phone: '8617984872', people: 2, reservationDate: new Date ('2023-04-30T06:00:00.000Z'), reservationShedule: 7 },
+    { name:'Paola Villarreal', email:'paola.villareal@u-erre.mx', phone: '8617984872', people: 2, reservationDate: new Date ('2023-04-30T06:00:00.000Z'), reservationShedule: 7 },
+    { name:'Paola Villarreal', email:'paola.villareal@u-erre.mx', phone: '8617984872', people: 2, reservationDate: new Date ('2023-04-30T06:00:00.000Z'), reservationShedule: 7 },
   ];
 
   displayedColumns: string[] = [
@@ -29,5 +30,13 @@ export class ReservationListComponent {
     'phone',
     'actions'
   ];
+
+  editButtonClicked(){
+    alert('Boton de edicion activado');
+  }
+
+  deleteButtonClicked(){
+    alert('Boton de borrado activado');
+  }
 
 }

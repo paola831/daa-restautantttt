@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Menu } from '../_models/menu.model';
 
 @Component({
   selector: 'app-menu',
@@ -7,15 +8,15 @@ import { Component } from '@angular/core';
 })
 export class MenuComponent {
 
-  menuList = [
+  menuList: Menu[] = [
     {
       title: 'Poke Primavera',
-      Image: '../../assets/poke1.png',
+      image: '../../assets/poke1.png',
       descripcion: 'Poke fresca con Camaron, elote, edamames, zanahoria, aguacate, piña y arroz', 
     },
     {
       title: 'Poke Verano',
-      Image: '../../assets/poke2.png',
+      image: '../../assets/poke2.png',
       descripcion: 'Poke fresca con Atun, pepino, edamames, zanahoria, aguacate, piña ', 
     },
     {

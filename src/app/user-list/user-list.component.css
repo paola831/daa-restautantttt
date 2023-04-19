@@ -1,10 +1,13 @@
 .wrapper {
     margin: 20px auto;
-    max-width: 1000px;
-
+    max-width: 600px;
 }
 
-.mat-colum-people,
+.top-actions {
+    margin: 20px 0;
+    float: left;
+}
+
 .mat-colum-actions {
     text-align: center;
 }
